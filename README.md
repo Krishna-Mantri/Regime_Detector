@@ -96,23 +96,6 @@ This outputs:
 - Average returns and volatility by regime
 - Latest technical indicators
 
-### Programmatic Usage
-
-```python
-from market_regime_app.services.data_service import get_stock_data
-from market_regime_app.services.model_service import run_regime_analysis
-from market_regime_app.utils.plotting import plot_regimes
-
-# Fetch data
-df = get_stock_data("SPY", "2020-01-01")
-
-# Run analysis
-df, regimes, features, kmeans, scaler = run_regime_analysis(df)
-
-# Visualize
-fig = plot_regimes(df, regimes)
-fig.show()
-```
 
 ## 📊 Regime Classification
 
@@ -188,9 +171,6 @@ Performance by Regime:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📝 License
-
-This project is licensed under the MIT License - see LICENSE file for details.
 
 ## 🙋 Support
 
